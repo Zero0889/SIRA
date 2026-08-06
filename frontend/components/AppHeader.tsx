@@ -15,7 +15,7 @@ import { PreferencesMenu } from "@/components/PreferencesMenu";
 
 const PRIMARY_LINKS = [
   { href: "/resumen", label: "Resumen", icon: GridFour },
-  { href: "/", label: "Parcelas", icon: MapTrifold },
+  { href: "/parcelas", label: "Parcelas", icon: MapTrifold },
   { href: "/cultivos", label: "Cultivos", icon: Plant },
 ];
 
@@ -25,7 +25,6 @@ const SECONDARY_LINKS = [
 ];
 
 function isActive(pathname: string, href: string) {
-  if (href === "/") return pathname === "/" || pathname.startsWith("/parcelas/");
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 

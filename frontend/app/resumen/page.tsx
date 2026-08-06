@@ -68,7 +68,7 @@ export default function ResumenPage() {
               Estado, consumo y prioridades de todas tus parcelas en una sola vista.
             </p>
             <div className="overview-hero-actions mt-7 flex flex-wrap gap-3">
-              <Link href="/" className="overview-hero-primary"><Plus size={17} weight="bold" /> Registrar parcela</Link>
+              <Link href="/parcelas" className="overview-hero-primary"><Plus size={17} weight="bold" /> Registrar parcela</Link>
               <Link href="/documentacion" className="overview-hero-secondary">Entender el cálculo <ArrowRight size={16} /></Link>
             </div>
           </div>
@@ -137,13 +137,13 @@ export default function ResumenPage() {
       <section className="panel overflow-hidden" aria-labelledby="map-overview-title">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b px-5 py-4">
           <div><h2 id="map-overview-title" className="section-title">Territorio monitoreado</h2><p className="mt-1 text-xs text-[var(--ink-muted)]">Ubicación y superficie aproximada de las parcelas registradas.</p></div>
-          <Link href="/" className="inline-flex min-h-10 items-center gap-2 rounded-lg px-3 text-sm font-semibold text-[var(--brand-strong)] transition hover:bg-[var(--brand-soft)]">Abrir mapa <ArrowRight size={16} weight="bold" /></Link>
+          <Link href="/parcelas" className="inline-flex min-h-10 items-center gap-2 rounded-lg px-3 text-sm font-semibold text-[var(--brand-strong)] transition hover:bg-[var(--brand-soft)]">Abrir mapa <ArrowRight size={16} weight="bold" /></Link>
         </div>
         <div className="p-3"><ParcelMap parcelas={parcels} height="22rem" showSavedAreas /></div>
       </section>
 
       <section aria-labelledby="parcels-overview-title">
-        <div className="mb-3 flex items-end justify-between gap-3"><div><h2 id="parcels-overview-title" className="section-title">Salud por parcela</h2><p className="mt-1 text-xs text-[var(--ink-muted)]">Lectura más reciente, cultivo y prioridad operativa.</p></div><Link href="/" className="text-sm font-semibold text-[var(--brand-strong)] hover:underline">Ver todas</Link></div>
+        <div className="mb-3 flex items-end justify-between gap-3"><div><h2 id="parcels-overview-title" className="section-title">Salud por parcela</h2><p className="mt-1 text-xs text-[var(--ink-muted)]">Lectura más reciente, cultivo y prioridad operativa.</p></div><Link href="/parcelas" className="text-sm font-semibold text-[var(--brand-strong)] hover:underline">Ver todas</Link></div>
         <div className="grid gap-3 md:grid-cols-2 2xl:grid-cols-3">
           {data?.parcelas.slice(0, 6).map((item) => <ParcelCard key={item.parcela.id} item={item} />)}
           {!loading && data?.parcelas.length === 0 && <div className="panel col-span-full"><EmptyState title="Registra la primera parcela" detail="Selecciona una ubicación en el mapa para empezar a supervisar el campo." /></div>}
