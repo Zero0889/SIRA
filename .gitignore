@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Env & secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# Node / Next
+node_modules/
+.next/
+.vercel/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# Docker
+postgres_data/
+
+# IDE
+.vscode/
+.idea/
+.impeccable/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Local delivery bundles and scratch output
+*.rar
+*.zip
+*.7z
+SIRA_ENTREGA*/
+SIRA_para_compartir/
+tmp/
+
+# Alembic (mantener migrations, ignorar cache local)
+backend/alembic/__pycache__/
+
+# PlatformIO / Arduino builds
+.pio/
+.pioenvs/
+firmware/build/
+
+# Database
+sira.db
+*.db
+
+# Provider local state
+supabase/.temp/

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <clipPath id="drop-clip">
+      <path d="M32 6C24.4 15.1 14 26.2 14 37.4C14 47.4 21.9 55 32 55C42.1 55 50 47.4 50 37.4C50 26.2 39.6 15.1 32 6Z"/>
+    </clipPath>
+  </defs>
+  <path d="M32 6C24.4 15.1 14 26.2 14 37.4C14 47.4 21.9 55 32 55C42.1 55 50 47.4 50 37.4C50 26.2 39.6 15.1 32 6Z" stroke="#105C36" stroke-width="3" stroke-linejoin="round"/>
+  <g clip-path="url(#drop-clip)" stroke="#105C36" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 37.8C20.9 34.4 27.3 35.3 33.3 39.4C39 43.3 44.3 44.3 52.2 40.5" stroke-width="3"/>
+    <path d="M14.4 44.8C21.3 42.2 27 43.1 32.1 46.5C37.1 49.8 42.2 50.3 49.4 47.1" stroke-width="3"/>
+    <path d="M18.2 51C23.1 49.9 27.2 50.8 31.1 53.2C34.1 55.1 37.2 55.9 41.5 55.1" stroke-width="3"/>
+    <path d="M39 34.2V44.1" stroke-width="2.8"/>
+  </g>
+  <circle cx="39" cy="29.8" r="4.4" fill="#FFFFFF" stroke="#105C36" stroke-width="2.8"/>
+  <circle cx="39" cy="29.8" r="1.35" fill="#5D9A72"/>
+</svg>

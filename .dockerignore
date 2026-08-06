@@ -1,0 +1,13 @@
+**/.venv
+**/node_modules
+**/.next
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+*.db
+*.log
+.env
+.env.local
+.env.production
+tmp
+output

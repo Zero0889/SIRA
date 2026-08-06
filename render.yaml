@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: sira-api
+    runtime: docker
+    plan: free
+    region: ohio
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_SSL_REQUIRE
+        value: "true"
+      - key: DATABASE_POOL_SIZE
+        value: "5"
+      - key: DATABASE_MAX_OVERFLOW
+        value: "3"
+      - key: CORS_ORIGINS
+        sync: false
+      - key: ALLOW_LEGACY_DEVICE_KEY
+        value: "false"
+      - key: ALLOW_REGISTRATION
+        value: "true"
+      - key: SESSION_DAYS
+        value: "30"
+      - key: BOOTSTRAP_ADMIN_EMAIL
+        sync: false
+      - key: BOOTSTRAP_ADMIN_PASSWORD
+        sync: false
+      - key: BOOTSTRAP_ADMIN_NAME
+        value: Administrador SIRA
+      - key: SMS_PROVIDER
+        value: disabled
+      - key: SENAMHI_VERIFY_SSL
+        value: "true"
